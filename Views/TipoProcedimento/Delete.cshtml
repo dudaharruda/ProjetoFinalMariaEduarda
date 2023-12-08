@@ -1,0 +1,27 @@
+﻿@model ProjetoFinalMariaE.Models.TipoProcedimento
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>tem certeza que deseja deletar isso?</h3>
+<div>
+    <h4>TipoProcedimento</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TipoPrecedimentoNome)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TipoPrecedimentoNome)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">voltar para a lista</a>
+    </form>
+</div>

@@ -1,0 +1,41 @@
+﻿@model ProjetoFinalMariaE.Models.Usuario
+@{
+    Layout = null;
+}
+<link href="~/css/login.css" rel="stylesheet" />
+<div class="caixalogin">
+    <form asp-action="Login">
+        <main>
+            <section class="box">
+                <div class="header">
+                    <div class="img">
+                        <img src="~/logo/biomedicina-logo-9980D97C53-seeklogo.com.png" />
+                    </div>
+                    <div>
+                        <h2>BIOMED</h2>
+                    </div>
+                </div>
+
+                <h1>ACESSE SUA CONTA</h1>
+                <form>
+                    <div class="form-input">
+                        <label asp-for="UsuarioEmail"></label>
+                        <input asp-for="UsuarioEmail" />
+                        <span asp-validation-for="UsuarioEmail"></span>
+                    </div>
+                    <div class="form-input">
+                        <label asp-for="UsuarioSenha"></label>
+                        <input asp-for="UsuarioSenha" type="password" />
+                        <span asp-validation-for="UsuarioSenha"></span>
+                    </div>
+                    <br />
+                    <h4>@ViewBag.Mensagem</h4>
+                    <br />
+                    <div class="btnEntrar">
+                        <input type="submit" value="Entrar" />
+                    </div>
+                </form>
+            </section>
+        </main>
+    </form>
+</div>

@@ -1,0 +1,52 @@
+﻿@model ProjetoFinalMariaE.Models.ProcedimentoRealizado
+@{
+    Layout = null;
+}
+<link rel="stylesheet" href="~/css/Imprimir.css" asp-append-version="true" />
+
+<div>
+    <h4>Resultado do Exame</h4>
+    <hr />
+    <dl class="row">
+        <body>
+            <div class="informações">
+                <div class="logo-titulo">
+                    <div class="logo">
+                        <img src="~/logo/biomedicina-logo-9980D97C53-seeklogo.com.png" alt="">
+                    </div>
+                    <div>
+                        <h1> Laboratório de exames</h1>
+                            <h2>BioMed</h2>                    
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="paciente">
+                <div class="informação-paciente">
+                    <h1>Dados do Paciente</h1>
+                    <h2>nome: @Html.DisplayFor(model => model.Cliente.ClienteNome)</h2>
+                    <h2>cpf:  @Html.DisplayFor(model => model.Cliente.ClienteCpf)</h2>
+                    <h2>sexo: @Html.DisplayFor(model => model.Cliente.ClienteSexo)</h2>
+                    <h2>endereço:@Html.DisplayFor(model => model.Cliente.ClienteEndereco)</h2>
+                    <h2>numero:@Html.DisplayFor(model => model.Cliente.ClienteNumero)</h2>
+                    <h2>Telefone: @Html.DisplayFor(model => model.Cliente.ClienteTelefone)</h2>
+                    <h2>data: @Html.DisplayFor(model => model.DataRealizacao.Date)</h2>
+                </div>
+                <div class="informação">
+
+                    <h2>Serviço solicitante: Instituto butantan</h2>
+                    <br>
+                    <h2>Médico solicitante:Dr.Carlos Silva</h2>
+                    <br>
+                    <h2>Clínica:São José</h2>
+                </div>
+            </div>
+            <br>
+            <div class="testecovid">
+                <h1>Teste molecular para a detectização do coronavírus SARS-CoV2</h1>
+                <hr>
+                <h2>Resultado COVID-19</h2>
+                <h2>Não detectado=Negativo</h2>
+                <h2>método:PCR em tempo real</h2>
+            </div>
+        </body>

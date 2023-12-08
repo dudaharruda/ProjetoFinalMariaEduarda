@@ -1,0 +1,68 @@
+﻿main, div {
+    border: 0;
+    margin: 0;
+    margin-bottom: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Courier New, Courier, monospace;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Courier New, Courier, monospace;
+}
+
+img {
+    width: 75px;
+}
+
+biomed {
+    margin-top: -91px;
+    margin-left: 73px;
+}
+
+.box {
+    background-color: #67E073;
+    width: 30%;
+    height: 450px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 3px solid #35A73C;
+    align-items: center;
+}
+
+.box {
+    padding: 25px;
+}
+
+    .box h1 {
+        text-align: center;
+        color: antiquewhite;
+        margin-top: 20px;
+    }
+
+.form-input {
+    margin-top: 9px;
+}
+
+    .form-input label {
+        display: block;
+        margin-top: 3px;
+    }
+
+    .form-input input {
+        margin-top: 3px;
+        padding: 5px;
+        background: white;
+        width: 100%;
+    }
+
+.btnEntrar {
+    margin-top: 3px;
+    padding: 5px;
+    padding-left: 8px;
+    margin-left: 52px;
+    width: 500px;
+}
